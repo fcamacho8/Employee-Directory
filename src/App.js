@@ -1,14 +1,21 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 import Wrapper from "./components/Wrapper"
-import Jumbotron from "./components/Jumbotron"
+import Home from "./page/home"
+
 
 function App() {
   return (
-    <Wrapper>
-      <Jumbotron>
-      </Jumbotron>
-    </Wrapper>
+    <Router>
+      <div>
+        <Wrapper>
+          <Route exact path="/" component={Home} />
+        </Wrapper>
+      </div>
+    </Router>
+
+
   );
 }
 
