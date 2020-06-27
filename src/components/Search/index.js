@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SearchForm from "../SearchForm/index";
+import Wrapper from "../Wrapper/index"
 
 class Search extends Component {
     state = {
@@ -15,11 +16,14 @@ class Search extends Component {
 
     render() {
         return (
-        <div>
-            <SearchForm
-                handleInputChange={this.handleInputChange}
-            />
-        </div>
+            <Wrapper>
+                <div>
+                    <SearchForm
+                        handleInputChange={this.handleInputChange}
+                    />
+                </div>
+
+            </Wrapper>
         )
 
     }
