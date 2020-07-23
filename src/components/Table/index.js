@@ -17,7 +17,7 @@ function Table({data}){
                         <td><img src={element.picture.large} alt ="img"></img></td>
                         <td>{element.name.first} {element.name.last}</td>
                         <td>{element.phone}</td>
-                        <td>{element.email}</td>
+                        <td><a href="mailto: {element.email}">{element.email}</a></td>
                     </tr>
                 ))}
             </tbody>

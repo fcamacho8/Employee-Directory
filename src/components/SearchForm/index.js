@@ -16,7 +16,7 @@ function SearchForm(props) {
                         placeholder="Type a name ..."
                         id="emp"
                     />
-                    <button type="submit" onClick={props.handleInput} className="btn btn-info tab">
+                    <button type="submit" onClick={props.handleInputChange} className="btn btn-info tab">
                         Search
                 </button>
 
